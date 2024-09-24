@@ -1,11 +1,11 @@
 module.exports = {
-    "name": "Code Stitch Web Designs",
-    "email": "help@codestitch.app",
+    "name": "Organic Obsessed",
+    "email": "help@organicObsessed.com",
     "phoneForTel": "555-779-4407",
     "phoneFormatted": "(555) 779-4407",
     "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
+        "lineOne": "123 Mungsteen Street",
+        "lineTwo": "Why does this line",
         "city": "Denver",
         "state": "CO",
         "zip": "80206",
