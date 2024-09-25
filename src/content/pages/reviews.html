@@ -1,5 +1,5 @@
 ---
-title: 'Reviews | Code Stitch Web Designs'
+title: 'Reviews | Agricom'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'reviews/'
@@ -21,12 +21,12 @@ eleventyNavigation:
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">Our Reviews</h1>
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
-        </picture>
+      <h1 id="home-h">Reviews</h1>
+      <picture class="cs-picture">
+        <source srcset="{% getUrl '/assets/images/reviews_banner.jpg' | resize({ height: 400, width: 750 }) | webp %}" media="(max-width: 600px)" type="image/webp">
+        <source srcset="{% getUrl '/assets/images/reviews_banner.jpg' | resize({ height: 1000, width: 2000 }) | webp %}" media="(min-width: 601px)" type="image/webp">
+        <img src="{% getUrl '/assets/images/reviews_banner.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Jam on bread">
+      </picture>
     </section>
 
     <!-- ============================================ -->

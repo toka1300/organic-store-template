@@ -1,14 +1,14 @@
 ---
-title: Canitiem Saxa
-url: canitiem-saxa
+title: Caring for Cows
+url: cows
 description: Lorem markdownum trabeati dicere deus.
-author: Code Stitch
+author: Dairy Dilbert
 date: 2023-06-08T15:28:08.486Z
 tags:
     - post
     - featured
-image: /assets/images/blog/landing.jpg
-imageAlt: Kitchen
+image: /assets/images/blog/cows.jpg
+imageAlt: Cows in pasture
 ---
 
 ## Aut inter Petraeum

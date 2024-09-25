@@ -1,13 +1,13 @@
 ---
-title: Sucos Creati
-url: sucos-creati
+title: Shakshuka Recipe
+url: Shakshuka
 description: Lorem markdownum Talia. Carinae equis.
-author: Code Stitch
+author: Tomato Cumin
 date: 2023-06-08T15:27:34.591Z
 tags:
     - post
-image: /assets/images/blog/landing.jpg
-imageAlt: Kitchen
+image: /assets/images/blog/shakshuka.jpg
+imageAlt: Shakshuka
 ---
 
 ## Hospes meus

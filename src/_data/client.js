@@ -1,15 +1,15 @@
 module.exports = {
     "name": "Organic Obsessed",
-    "email": "help@organicObsessed.com",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
+    "email": "help@organic-obsessed.com",
+    "phoneForTel": "613-779-4407",
+    "phoneFormatted": "(613) 779-4407",
     "address": {
         "lineOne": "123 Mungsteen Street",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
-        "country": "US",
-        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+        "city": "Ottawa",
+        "province": "ON",
+        "postalCode": "K0A3Z8",
+        "country": "Canada",
+        "mapLink": "https://maps.app.goo.gl/C9z4n24WabuMAQxCA"
     },
     "socials": {
         "facebook": "https://www.facebook.com/",

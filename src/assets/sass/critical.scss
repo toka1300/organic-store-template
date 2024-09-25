@@ -47,7 +47,7 @@
             position: relative;
 
             & .green-text {
-              color: rgba(34, 149, 33, 0.96);
+              color: var(--textColorGreen)
             }
         }
 

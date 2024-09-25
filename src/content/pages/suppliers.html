@@ -1,21 +1,151 @@
 ---
-permalink: false
+title: 'Our Suppliers | Agricom'
+description: 'Meta description for the page'
+permalink: suppliers/
 eleventyNavigation:
     key: Our Suppliers
     order: 300
 ---
 
-{# 
-    The starter kit uses the eleventy navigation plugin to render navigation items using data defined within the page,
-    making the navigation easy to control in larger projects.
-    https://www.11ty.dev/docs/plugins/navigation/
+{% extends "layouts/base.html" %}
 
-    In the starter kit, dropdowns are created by defining a "parent" in the eleventyNavigation frontmatter data of the child
-    page (see pages/project-one.html as an example).
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/suppliers.css">
+{% endblock %}
 
-    To create the dropdown "parent", which gets rendered as a <span> (as opposed to an <a>) we need to create a blank HTML
-    file with the eleventyNavigation frontmatter defined, as shown in this example file.
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
 
-    Make sure the permalink is set to "false", which prevents a HTML file being made in /public and keeps this page from
-    being written to the sitemap.
-#}
+    <section id="int-hero">
+        <h1 id="home-h">Our Suppliers</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+    <!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
+
+<section id="meet-team-1102">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Our Suppliers</span>
+          <h2 class="cs-title">Our Expert Food Producers</h2>
+          <p class="cs-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur neque voluptatibus ipsam ratione, doloribus harum error repudiandae dignissimos nemo est!
+          </p>
+      </div>
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <picture class="cs-picture">
+                <source srcset="{% getUrl '/assets/images/farmer.jpg' | resize({ height: 600, width: 686 }) | webp %}" media="(max-width: 600px)" type="image/webp">
+                <source srcset="{% getUrl '/assets/images/farmer.jpg' | resize({ height: 674, width: 610 }) | webp %}" media="(min-width: 601px)" type="image/webp">
+                <img src="{% getUrl '/assets/images/farmer.jpg' | resize({ height: 674, width: 610 }) | jpeg %}" alt="Farmer looking at field">
+              </picture>
+              <div class="cs-info">
+                  <span class="cs-name">Esther Howard</span>
+                  <span class="cs-job">Farmer</span>
+                  <div class="cs-social-group">
+                      <a href="" class="cs-link" aria-label="visit linkedin">
+                          <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/face-dark-grey.svg" alt="linkedin" width="12" height="12">
+                      </a>
+                      <a href="" class="cs-link" aria-label="visit twitter">
+                          <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-dark-grey.svg" alt="twitter" width="12" height="12">
+                      </a>
+                      <a href="" class="cs-link" aria-label="visit instragram">
+                          <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-dark-grey.svg" alt="instragram" width="12" height="12">
+                      </a>
+                      <a href="" class="cs-link" aria-label="visit youtube">
+                          <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-dark-grey.svg" alt="youtube" width="12" height="12">
+                      </a>
+                  </div>
+              </div>
+          </li>
+          <li class="cs-item">
+              <picture class="cs-picture">
+                <source srcset="{% getUrl '/assets/images/about_person2.jpg' | resize({ height: 600, width: 686 }) | webp %}" media="(max-width: 600px)" type="image/webp">
+                <source srcset="{% getUrl '/assets/images/about_person2.jpg' | resize({ height: 674, width: 610 }) | webp %}" media="(min-width: 601px)" type="image/webp">
+                <img src="{% getUrl '/assets/images/about_person2.jpg' | resize({ height: 674, width: 610 }) | jpeg %}" alt="Farmer looking at field">
+              </picture>
+              <div class="cs-info">
+                  <span class="cs-name">Jenny Wilson</span>
+                  <span class="cs-job">Natural Deodorant Producer</span>
+                  <div class="cs-social-group">
+                      <a href="" class="cs-link" aria-label="visit linkedin">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/face-dark-grey.svg" alt="linkedin" width="12" height="12">
+                      </a>
+                      <a href="" class="cs-link" aria-label="visit twitter">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-dark-grey.svg" alt="twitter" width="12" height="12">
+                      </a>
+                      <a href="" class="cs-link" aria-label="visit instragram">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-dark-grey.svg" alt="instragram" width="12" height="12">
+                      </a>
+                      <a href="" class="cs-link" aria-label="visit youtube">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-dark-grey.svg" alt="youtube" width="12" height="12">
+                      </a>
+                  </div>
+              </div>
+          </li>
+          <li class="cs-item">
+            <picture class="cs-picture">
+              <source srcset="{% getUrl '/assets/images/about_person3.jpg' | resize({ height: 600, width: 686 }) | webp %}" media="(max-width: 600px)" type="image/webp">
+              <source srcset="{% getUrl '/assets/images/about_person3.jpg' | resize({ height: 674, width: 610 }) | webp %}" media="(min-width: 601px)" type="image/webp">
+              <img src="{% getUrl '/assets/images/about_person3.jpg' | resize({ height: 674, width: 610 }) | jpeg %}" alt="Farmer looking at field">
+            </picture>
+              <div class="cs-info">
+                  <span class="cs-name">Leslie Alexander</span>
+                  <span class="cs-job">Baker</span>
+                  <div class="cs-social-group">
+                      <a href="" class="cs-link" aria-label="visit linkedin">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/face-dark-grey.svg" alt="linkedin" width="12" height="12">
+                      </a>
+                      <a href="" class="cs-link" aria-label="visit twitter">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-dark-grey.svg" alt="twitter" width="12" height="12">
+                      </a>
+                      <a href="" class="cs-link" aria-label="visit instragram">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-dark-grey.svg" alt="instragram" width="12" height="12">
+                      </a>
+                      <a href="" class="cs-link" aria-label="visit youtube">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-dark-grey.svg" alt="youtube" width="12" height="12">
+                      </a>
+                  </div>
+              </div>
+          </li>
+          <li class="cs-item">
+              <picture class="cs-picture">
+                <source srcset="{% getUrl '/assets/images/about_person4.jpg' | resize({ height: 600, width: 686 }) | webp %}" media="(max-width: 600px)" type="image/webp">
+                <source srcset="{% getUrl '/assets/images/about_person4.jpg' | resize({ height: 674, width: 610 }) | webp %}" media="(min-width: 601px)" type="image/webp">
+                <img src="{% getUrl '/assets/images/about_person4.jpg' | resize({ height: 674, width: 610 }) | jpeg %}" alt="Farmer looking at field">
+              </picture>
+              <div class="cs-info">
+                  <span class="cs-name">Phil Philson</span>
+                  <span class="cs-job">Jam Artisan</span>
+                  <div class="cs-social-group">
+                      <a href="" class="cs-link" aria-label="visit linkedin">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/face-dark-grey.svg" alt="linkedin" width="12" height="12">
+                      </a>
+                      <a href="" class="cs-link" aria-label="visit twitter">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-dark-grey.svg" alt="twitter" width="12" height="12">
+                      </a>
+                      <a href="" class="cs-link" aria-label="visit instragram">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-dark-grey.svg" alt="instragram" width="12" height="12">
+                      </a>
+                      <a href="" class="cs-link" aria-label="visit youtube">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-dark-grey.svg" alt="youtube" width="12" height="12">
+                      </a>
+                  </div>
+              </div>
+          </li>
+      </ul>
+  </div>
+</section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}
