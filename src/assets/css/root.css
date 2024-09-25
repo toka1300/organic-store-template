@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0rem) {
   :root {
     --primary: #f1cf69;
-    --primaryLight: #ffd675;
+    --primaryDark: #c1a654;
     --secondary: #4A8B71;
     --secondaryLight: #6dd4ab;
     --headerColor: #1a1a1a;
@@ -729,21 +729,6 @@
   }
 }
 /* Dark Mode */
-@media only screen and (min-width: 64rem) {
-  body.dark-mode #cs-navigation {
-    background-color: var(--dark);
-  }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it turn white */
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #cs-navigation .cs-li-link {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #cs-navigation .cs-li-link:before {
-    background-color: var(--primaryLight);
-  }
-}
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
 <--- -------------------------- -*/
@@ -886,6 +871,14 @@
     height: 100%;
     width: 100%;
   }
+  #cta .cs-button-solid {
+    display: inline-block;
+    background-color: var(--primary);
+    border: none;
+  }
+  #cta .cs-button-solid:hover {
+    background-color: var(--primaryDark);
+  }
 }
 /* Small Desktop */
 @media only screen and (min-width: 64rem) {
@@ -941,11 +934,6 @@
   }
 }
 /* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #cta:after {
-    display: none;
-  }
-}
 /*-- -------------------------- -->
 <---           Footer           -->
 <--- -------------------------- -*/
@@ -973,7 +961,6 @@
     display: block;
     height: 100%;
     width: auto;
-    filter: grayscale(1) brightness(1000%);
   }
   #footer .left-section p {
     opacity: 0.9;

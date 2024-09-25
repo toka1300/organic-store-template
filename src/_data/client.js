@@ -5,7 +5,6 @@ module.exports = {
     "phoneFormatted": "(555) 779-4407",
     "address": {
         "lineOne": "123 Mungsteen Street",
-        "lineTwo": "Why does this line",
         "city": "Denver",
         "state": "CO",
         "zip": "80206",

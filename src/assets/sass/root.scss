@@ -9,7 +9,7 @@
     // Website colors
     :root {
         --primary: #f1cf69;
-        --primaryLight: #ffd675;
+        --primaryDark: #c1a654;
         --secondary: #4A8B71;
         --secondaryLight: #6dd4ab;
         --headerColor: #1a1a1a;
@@ -940,28 +940,28 @@
 }
 
 /* Dark Mode */
-@media only screen and (min-width: 64rem) {
-    body.dark-mode {
-        #cs-navigation {
-            background-color: var(--dark);
+// @media only screen and (min-width: 64rem) {
+//     body.dark-mode {
+//         #cs-navigation {
+//             background-color: var(--dark);
 
-            .cs-logo {
-                /* makes it turn white */
-                filter: grayscale(1) brightness(1000%);
-            }
+//             .cs-logo {
+//                 /* makes it turn white */
+//                 filter: grayscale(1) brightness(1000%);
+//             }
 
-            .cs-li-link {
-                color: var(--bodyTextColorWhite);
-            }
+//             .cs-li-link {
+//                 color: var(--bodyTextColorWhite);
+//             }
 
-            .cs-li-link {
-                &:before {
-                    background-color: var(--primaryLight);
-                }
-            }
-        }
-    }
-}
+//             .cs-li-link {
+//                 &:before {
+//                     background-color: var(--primaryLight);
+//                 }
+//             }
+//         }
+//     }
+// }
 
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
@@ -1121,6 +1121,16 @@
             height: 100%;
             width: 100%;
         }
+
+        .cs-button-solid {
+          display: inline-block;
+          background-color: var(--primary);
+          border: none;
+
+          &:hover {
+            background-color: var(--primaryDark);
+          }
+        }
     }
 }
 
@@ -1182,15 +1192,15 @@
 }
 
 /* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #cta {
-            &:after {
-                display: none;
-            }
-        }
-    }
-}
+// @media only screen and (min-width: 0rem) {
+//     body.dark-mode {
+//         #cta {
+//             &:after {
+//                 display: none;
+//             }
+//         }
+//     }
+// }
 
 /*-- -------------------------- -->
 <---           Footer           -->
@@ -1219,7 +1229,7 @@
                     display: block;
                     height: 100%;
                     width: auto;
-                    filter: grayscale(1) brightness(1000%);
+                    // filter: grayscale(1) brightness(1000%);
                 }
             }
 
