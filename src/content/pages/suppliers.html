@@ -20,10 +20,10 @@ eleventyNavigation:
 
     <section id="int-hero">
         <h1 id="home-h">Our Suppliers</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        <picture class="cs-picture">
+          <source srcset="{% getUrl '/assets/images/farm.jpg' | resize({ height: 400, width: 750 }) | webp %}" media="(max-width: 600px)" type="image/webp">
+          <source srcset="{% getUrl '/assets/images/farm.jpg' | resize({ height: 1000, width: 2000 }) | webp %}" media="(min-width: 601px)" type="image/webp">
+          <img src="{% getUrl '/assets/images/farm.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Farm at sunrise">
         </picture>
 
     </section>
@@ -53,16 +53,16 @@ eleventyNavigation:
                   <span class="cs-job">Farmer</span>
                   <div class="cs-social-group">
                       <a href="" class="cs-link" aria-label="visit linkedin">
-                          <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/face-dark-grey.svg" alt="linkedin" width="12" height="12">
+                          <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/face-dark-grey.svg" alt="facebook" width="12" height="12">
                       </a>
                       <a href="" class="cs-link" aria-label="visit twitter">
-                          <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-dark-grey.svg" alt="twitter" width="12" height="12">
+                          <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/twitter-dark-grey.svg" alt="twitter" width="12" height="12">
                       </a>
                       <a href="" class="cs-link" aria-label="visit instragram">
-                          <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-dark-grey.svg" alt="instragram" width="12" height="12">
+                          <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/instagram-dark-grey.svg" alt="instragram" width="12" height="12">
                       </a>
                       <a href="" class="cs-link" aria-label="visit youtube">
-                          <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-dark-grey.svg" alt="youtube" width="12" height="12">
+                          <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/youtube-dark-grey.svg" alt="youtube" width="12" height="12">
                       </a>
                   </div>
               </div>
@@ -71,23 +71,23 @@ eleventyNavigation:
               <picture class="cs-picture">
                 <source srcset="{% getUrl '/assets/images/about_person2.jpg' | resize({ height: 600, width: 686 }) | webp %}" media="(max-width: 600px)" type="image/webp">
                 <source srcset="{% getUrl '/assets/images/about_person2.jpg' | resize({ height: 674, width: 610 }) | webp %}" media="(min-width: 601px)" type="image/webp">
-                <img src="{% getUrl '/assets/images/about_person2.jpg' | resize({ height: 674, width: 610 }) | jpeg %}" alt="Farmer looking at field">
+                <img src="{% getUrl '/assets/images/about_person2.jpg' | resize({ height: 674, width: 610 }) | jpeg %}" alt="Smiling person">
               </picture>
               <div class="cs-info">
                   <span class="cs-name">Jenny Wilson</span>
                   <span class="cs-job">Natural Deodorant Producer</span>
                   <div class="cs-social-group">
                       <a href="" class="cs-link" aria-label="visit linkedin">
-                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/face-dark-grey.svg" alt="linkedin" width="12" height="12">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/face-dark-grey.svg" alt="facebook" width="12" height="12">
                       </a>
                       <a href="" class="cs-link" aria-label="visit twitter">
-                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-dark-grey.svg" alt="twitter" width="12" height="12">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/twitter-dark-grey.svg" alt="twitter" width="12" height="12">
                       </a>
                       <a href="" class="cs-link" aria-label="visit instragram">
-                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-dark-grey.svg" alt="instragram" width="12" height="12">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/instagram-dark-grey.svg" alt="instragram" width="12" height="12">
                       </a>
                       <a href="" class="cs-link" aria-label="visit youtube">
-                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-dark-grey.svg" alt="youtube" width="12" height="12">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/youtube-dark-grey.svg" alt="youtube" width="12" height="12">
                       </a>
                   </div>
               </div>
@@ -96,23 +96,23 @@ eleventyNavigation:
             <picture class="cs-picture">
               <source srcset="{% getUrl '/assets/images/about_person3.jpg' | resize({ height: 600, width: 686 }) | webp %}" media="(max-width: 600px)" type="image/webp">
               <source srcset="{% getUrl '/assets/images/about_person3.jpg' | resize({ height: 674, width: 610 }) | webp %}" media="(min-width: 601px)" type="image/webp">
-              <img src="{% getUrl '/assets/images/about_person3.jpg' | resize({ height: 674, width: 610 }) | jpeg %}" alt="Farmer looking at field">
+              <img src="{% getUrl '/assets/images/about_person3.jpg' | resize({ height: 674, width: 610 }) | jpeg %}" alt="Happy woman">
             </picture>
               <div class="cs-info">
                   <span class="cs-name">Leslie Alexander</span>
                   <span class="cs-job">Baker</span>
                   <div class="cs-social-group">
                       <a href="" class="cs-link" aria-label="visit linkedin">
-                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/face-dark-grey.svg" alt="linkedin" width="12" height="12">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/face-dark-grey.svg" alt="facebook" width="12" height="12">
                       </a>
                       <a href="" class="cs-link" aria-label="visit twitter">
-                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-dark-grey.svg" alt="twitter" width="12" height="12">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/twitter-dark-grey.svg" alt="twitter" width="12" height="12">
                       </a>
                       <a href="" class="cs-link" aria-label="visit instragram">
-                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-dark-grey.svg" alt="instragram" width="12" height="12">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/instagram-dark-grey.svg" alt="instragram" width="12" height="12">
                       </a>
                       <a href="" class="cs-link" aria-label="visit youtube">
-                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-dark-grey.svg" alt="youtube" width="12" height="12">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/youtube-dark-grey.svg" alt="youtube" width="12" height="12">
                       </a>
                   </div>
               </div>
@@ -121,23 +121,23 @@ eleventyNavigation:
               <picture class="cs-picture">
                 <source srcset="{% getUrl '/assets/images/about_person4.jpg' | resize({ height: 600, width: 686 }) | webp %}" media="(max-width: 600px)" type="image/webp">
                 <source srcset="{% getUrl '/assets/images/about_person4.jpg' | resize({ height: 674, width: 610 }) | webp %}" media="(min-width: 601px)" type="image/webp">
-                <img src="{% getUrl '/assets/images/about_person4.jpg' | resize({ height: 674, width: 610 }) | jpeg %}" alt="Farmer looking at field">
+                <img src="{% getUrl '/assets/images/about_person4.jpg' | resize({ height: 674, width: 610 }) | jpeg %}" alt="Happy man">
               </picture>
               <div class="cs-info">
                   <span class="cs-name">Phil Philson</span>
                   <span class="cs-job">Jam Artisan</span>
                   <div class="cs-social-group">
                       <a href="" class="cs-link" aria-label="visit linkedin">
-                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/face-dark-grey.svg" alt="linkedin" width="12" height="12">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/face-dark-grey.svg" alt="facebook" width="12" height="12">
                       </a>
                       <a href="" class="cs-link" aria-label="visit twitter">
-                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-dark-grey.svg" alt="twitter" width="12" height="12">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/twitter-dark-grey.svg" alt="twitter" width="12" height="12">
                       </a>
                       <a href="" class="cs-link" aria-label="visit instragram">
-                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-dark-grey.svg" alt="instragram" width="12" height="12">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/instagram-dark-grey.svg" alt="instragram" width="12" height="12">
                       </a>
                       <a href="" class="cs-link" aria-label="visit youtube">
-                          <img img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-dark-grey.svg" alt="youtube" width="12" height="12">
+                          <img img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/youtube-dark-grey.svg" alt="youtube" width="12" height="12">
                       </a>
                   </div>
               </div>

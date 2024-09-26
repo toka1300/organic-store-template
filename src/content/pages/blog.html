@@ -24,7 +24,7 @@ eleventyNavigation:
       <picture class="cs-picture">
         <source srcset="{% getUrl '/assets/images/blog_banner.jpg' | resize({ height: 400, width: 750 }) | webp %}" media="(max-width: 600px)" type="image/webp">
         <source srcset="{% getUrl '/assets/images/blog_banner.jpg' | resize({ height: 1000, width: 2000 }) | webp %}" media="(min-width: 601px)" type="image/webp">
-        <img src="{% getUrl '/assets/images/blog_banner.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Jam on bread">
+        <img src="{% getUrl '/assets/images/blog_banner.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Picnic with bread, wine and produce">
       </picture>
 
   </section>
@@ -61,7 +61,7 @@ eleventyNavigation:
                                 <picture class="blog-author-img">
                                     <img
                                     src="/assets/svgs/profile.svg"
-                                    alt="house"
+                                    alt="Profile picture"
                                     width="32"
                                     height="32"
                                     decoding="async"/>
@@ -77,7 +77,7 @@ eleventyNavigation:
                             <p class="blog-desc">
                                 {{ post.data.description }}
                             </p>
-                            <a href="{{ post.url }}" class="blog-link">Continue Reading</a>
+                            <a href="{{ post.url }}" class="cs-button-solid">Continue Reading</a>
                         </div>
                     </article>
                 {%- endfor -%}
