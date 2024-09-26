@@ -4,11 +4,11 @@ const pluginMinifier = require("@sherby/eleventy-plugin-files-minifier");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
 
 // Configs
+const eleventyPluginSharpImages = require("@codestitchofficial/eleventy-plugin-sharp-images");
 const configCss = require("./src/config/css");
 const configJs = require("./src/config/javascript");
 const configSitemap = require("./src/config/sitemap");
 const configServer = require("./src/config/server");
-const eleventyPluginSharpImages = require("@codestitchofficial/eleventy-plugin-sharp-images");
 
 // Other
 const filterPostDate = require("./src/config/postDate");
@@ -19,6 +19,11 @@ module.exports = function (eleventyConfig) {
     /**=====================================================================
           EXTENSIONS - Recognising non-default languages as templates 
     =======================================================================*/
+
+    eleventyConfig.addPlugin(eleventyPluginSharpImages, {
+      urlPath: "/assets/images",
+      outputDir: "public/assets/images",
+    });
     /** https://www.11ty.dev/docs/languages/custom/ */
 
     /**
@@ -50,11 +55,6 @@ module.exports = function (eleventyConfig) {
      *  https://github.com/11ty/eleventy-navigation
      */
     eleventyConfig.addPlugin(pluginEleventyNavigation);
-
-    eleventyConfig.addPlugin(eleventyPluginSharpImages, {
-      urlPath: "/assets/images",
-      outputDir: "public/assets/images",
-    });
 
     /**
      *  AUTOMATIC SITEMAP GENERATION 
