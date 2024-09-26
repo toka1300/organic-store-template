@@ -14,16 +14,10 @@ const eleventyPluginSharpImages = require("@codestitchofficial/eleventy-plugin-s
 const filterPostDate = require("./src/config/postDate");
 const isProduction = configServer.isProduction;
 
-
 module.exports = function (eleventyConfig) {
     /**=====================================================================
           EXTENSIONS - Recognising non-default languages as templates 
     =======================================================================*/
-
-    eleventyConfig.addPlugin(eleventyPluginSharpImages, {
-      urlPath: "/assets/images",
-      outputDir: "public/assets/images",
-    });
     /** https://www.11ty.dev/docs/languages/custom/ */
 
     /**
@@ -48,6 +42,10 @@ module.exports = function (eleventyConfig) {
                   PLUGINS - Adds additional eleventy functionality 
     =======================================================================*/
     /** https://www.11ty.dev/docs/plugins/ */
+    eleventyConfig.addPlugin(eleventyPluginSharpImages, {
+      urlPath: "/assets/images",
+      outputDir: "public/assets/images",
+    });
 
     /**
      *  ELEVENTY NAVIGATION
