@@ -1,4 +1,5 @@
 // Imports
+const eleventyPluginSharpImages = require("@codestitchofficial/eleventy-plugin-sharp-images");
 const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
 const pluginMinifier = require("@sherby/eleventy-plugin-files-minifier");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
@@ -8,7 +9,6 @@ const configCss = require("./src/config/css");
 const configJs = require("./src/config/javascript");
 const configSitemap = require("./src/config/sitemap");
 const configServer = require("./src/config/server");
-const eleventyPluginSharpImages = require("@codestitchofficial/eleventy-plugin-sharp-images");
 
 // Other
 const filterPostDate = require("./src/config/postDate");
