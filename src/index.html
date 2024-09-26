@@ -89,21 +89,21 @@ eleventyNavigation:
             <span class="cs-header">Our Certifications:</span>
             <div class="cs-logo-group">
                 <!--Logo 1-->
-                <img class="cs-logo" src="./assets/images/partner1.svg" alt="logo" width="113" height="31" decoding="async">
+                <img class="cs-logo" src="./assets/images/partner1.svg" alt="Eco farm logo" width="113" height="31" decoding="async">
                 <!--Logo 2-->
-                <img class="cs-logo" src="./assets/images/partner2.svg" alt="logo" width="113" height="40" decoding="async">
+                <img class="cs-logo" src="./assets/images/partner2.svg" alt="Farmer house logo" width="113" height="40" decoding="async">
                 <!--Logo 3-->
-                <img class="cs-logo" src="./assets/images/partner3.svg" alt="logo" width="113" height="30" decoding="async">
+                <img class="cs-logo" src="./assets/images/partner3.svg" alt="Good farm logo" width="113" height="30" decoding="async">
                 <!--Logo 4-->
-                <img class="cs-logo" src="./assets/images/partner4.svg" alt="logo" width="113" height="37" decoding="async">
+                <img class="cs-logo" src="./assets/images/partner4.svg" alt="The Farm logo" width="113" height="37" decoding="async">
             </div>
         </div>
         <div class="cs-stat-group">
-            <picture class="cs-background">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/leaves.jpg">
-                <source media="(min-width: 601px)" srcset="./assets/images/hero.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/leaves.jpg" alt="leaves" width="842" height="737" aria-hidden="true">
-            </picture>
+          <picture class="cs-background">
+            <source srcset="{% getUrl '/assets/images/hero.jpg' | resize({ width: 720, height: 774 }) | webp %}" media="(max-width: 600px)" type="image/webp">
+            <source srcset="{% getUrl '/assets/images/hero.jpg' | resize({ width: 1500, height: 1475 }) | webp %}" media="(min-width: 601px)" type="image/webp">
+            <img src="{% getUrl '/assets/images/hero.jpg' | resize({ width: 1500, height: 1475 }) | jpeg %}" alt="Produce collection">
+          </picture>
             <div class="cs-stat-box">
                 <span class="cs-stat">
                     83
@@ -199,7 +199,7 @@ eleventyNavigation:
           <picture class="cs-picture cs-picture-1">
             <source srcset="{% getUrl '/assets/images/slogan.png' | resize({ height: 508, width: 1110 }) | webp %}" media="(max-width: 600px)" type="image/webp">
             <source srcset="{% getUrl '/assets/images/slogan.png' | resize({ height: 508, width: 1110 }) | webp %}" media="(min-width: 601px)" type="image/webp">
-            <img src="{% getUrl '/assets/images/slogan.png' | resize({ height: 676, width: 657 }) | jpeg %}" alt="Strawberries">
+            <img src="{% getUrl '/assets/images/slogan.png' | resize({ height: 676, width: 657 }) | jpeg %}" alt="Company slogan">
           </picture>
       </div>
       <!-- Right Content Section-->
@@ -222,22 +222,22 @@ eleventyNavigation:
   <div class="cs-container">
       <ul class="cs-card-group">
           <li class="cs-item">
-              <img class="cs-icon" aria-hidden="true" src="./assets/svgs/trash-off.svg" loading="lazy" decoding="async" alt="plastic bottle" width="76" height="66">
+              <img class="cs-icon" aria-hidden="true" src="./assets/svgs/trash-off.svg" loading="lazy" decoding="async" alt="No trash icon" width="76" height="66">
               <span class="cs-number">100</span>
               <span class="cs-desc">tonnes of plastic diverted from landfills</span>
           </li>
           <li class="cs-item">
-              <img class="cs-icon" aria-hidden="true" src="./assets/svgs/mood-heart.svg" loading="lazy" decoding="async" alt="icon" width="76" height="66">
+              <img class="cs-icon" aria-hidden="true" src="./assets/svgs/mood-heart.svg" loading="lazy" decoding="async" alt="Happy customer icon" width="76" height="66">
               <span class="cs-number">100%</span>
               <span class="cs-desc">Guaranteed Customer Satisfaction</span>
           </li>
           <li class="cs-item">
-            <img class="cs-icon" aria-hidden="true" src="./assets/svgs/flower.svg" loading="lazy" decoding="async" alt="icon" width="76" height="66">
+            <img class="cs-icon" aria-hidden="true" src="./assets/svgs/flower.svg" loading="lazy" decoding="async" alt="Flower icon" width="76" height="66">
             <span class="cs-number">500</span>
             <span class="cs-desc"> tonnes of Organic Produce Sold</span>
         </li>
           <li class="cs-item">
-              <img class="cs-icon" aria-hidden="true" src="./assets/svgs/carrot.svg" loading="lazy" decoding="async" alt="icon" width="76" height="66">
+              <img class="cs-icon" aria-hidden="true" src="./assets/svgs/carrot.svg" loading="lazy" decoding="async" alt="Carrot icon" width="76" height="66">
               <span class="cs-number">10</span>
               <span class="cs-desc">Fresh, organic recipes weekly</span>
           </li>
@@ -258,7 +258,12 @@ eleventyNavigation:
       <ul class="cs-card-group">
           <!-- Review 1 -->
           <li class="cs-item">
-              <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png" alt="profile picture" width="80" height="80">
+            <!-- <picture class="cs-picture">
+              <source srcset="{% getUrl '/assets/images/about_banner.jpg' | resize({ height: 400, width: 750 }) | webp %}" media="(max-width: 600px)" type="image/webp">
+              <source srcset="{% getUrl '/assets/images/about_banner.jpg' | resize({ height: 1000, width: 2000 }) | webp %}" media="(min-width: 601px)" type="image/webp">
+              <img src="{% getUrl '/assets/images/about_banner.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Jam on bread">
+            </picture> -->
+              <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="./assets/images/profile-local.png" alt="profile picture" width="80" height="80">
               <p class="cs-item-text">
                   Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, debitis!
               </p>
