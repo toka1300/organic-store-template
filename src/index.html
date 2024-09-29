@@ -102,7 +102,7 @@ eleventyNavigation:
           <picture class="cs-background">
             <source srcset="{% getUrl '/assets/images/hero.jpg' | resize({ width: 720, height: 774 }) | avif %}" media="(max-width: 600px)" type="image/avif">
             <source srcset="{% getUrl '/assets/images/hero.jpg' | resize({ width: 1500, height: 1475 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-            <img src="{% getUrl '/assets/images/hero.jpg' | resize({ width: 1500, height: 1475 }) | jpeg %}" alt="Produce collection">
+            <img src="{% getUrl '/assets/images/hero.jpg' | resize({ width: 1500, height: 1475 }) | webp %}" alt="Produce collection">
           </picture>
             <div class="cs-stat-box">
                 <span class="cs-stat">
@@ -128,62 +128,62 @@ eleventyNavigation:
   <picture class="cs-picture">
     <source srcset="{% getUrl '/assets/images/jam.jpg' | resize({ height: 150, width: 150 }) | avif %}" media="(max-width: 600px)" type="image/avif">
     <source srcset="{% getUrl '/assets/images/jam.jpg' | resize({ height: 300, width: 300 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-    <img src="{% getUrl '/assets/images/jam.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Jam on bread">
+    <img src="{% getUrl '/assets/images/jam.jpg' | resize({ height: 300, width: 300 }) | webp %}" alt="Jam on bread">
   </picture>
 
   <picture class="cs-picture">
     <source srcset="{% getUrl '/assets/images/blueberries.jpg' | resize({ height: 150, width: 150 }) | avif %}" media="(max-width: 600px)" type="image/avif">
     <source srcset="{% getUrl '/assets/images/blueberries.jpg' | resize({ height: 300, width: 300 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-    <img src="{% getUrl '/assets/images/blueberries.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Fresh blueberries">
+    <img src="{% getUrl '/assets/images/blueberries.jpg' | resize({ height: 300, width: 300 }) | webp%}" alt="Fresh blueberries">
   </picture>
 
   <picture class="cs-picture">
     <source srcset="{% getUrl '/assets/images/mushroom.jpg' | resize({ height: 150, width: 150 }) | avif %}" media="(max-width: 600px)" type="image/avif">
     <source srcset="{% getUrl '/assets/images/mushroom.jpg' | resize({ height: 300, width: 300 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-    <img src="{% getUrl '/assets/images/mushroom.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Organic mushrooms">
+    <img src="{% getUrl '/assets/images/mushroom.jpg' | resize({ height: 300, width: 300 }) | webp%}" alt="Organic mushrooms">
   </picture>
 
   <picture class="cs-picture">
     <source srcset="{% getUrl '/assets/images/tea.jpg' | resize({ height: 150, width: 150 }) | avif %}" media="(max-width: 600px)" type="image/avif">
     <source srcset="{% getUrl '/assets/images/tea.jpg' | resize({ height: 300, width: 300 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-    <img src="{% getUrl '/assets/images/tea.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Refillable tea">
+    <img src="{% getUrl '/assets/images/tea.jpg' | resize({ height: 300, width: 300 }) | webp%}" alt="Refillable tea">
   </picture>
 
   <picture class="cs-picture">
     <source srcset="{% getUrl '/assets/images/coffee.jpg' | resize({ height: 150, width: 150 }) | avif %}" media="(max-width: 600px)" type="image/avif">
     <source srcset="{% getUrl '/assets/images/coffee.jpg' | resize({ height: 300, width: 300 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-    <img src="{% getUrl '/assets/images/coffee.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Coffee in bags">
+    <img src="{% getUrl '/assets/images/coffee.jpg' | resize({ height: 300, width: 300 }) | webp%}" alt="Coffee in bags">
   </picture>
 
   <picture class="cs-picture">
     <source srcset="{% getUrl '/assets/images/tumeric.jpg' | resize({ height: 150, width: 150 }) | avif %}" media="(max-width: 600px)" type="image/avif">
     <source srcset="{% getUrl '/assets/images/tumeric.jpg' | resize({ height: 300, width: 300 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-    <img src="{% getUrl '/assets/images/tumeric.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Tumeric ginger supplement">
+    <img src="{% getUrl '/assets/images/tumeric.jpg' | resize({ height: 300, width: 300 }) | webp%}" alt="Tumeric ginger supplement">
   </picture>
 
   <picture class="cs-picture">
     <source srcset="{% getUrl '/assets/images/wellness.jpg' | resize({ height: 150, width: 150 }) | avif %}" media="(max-width: 600px)" type="image/avif">
     <source srcset="{% getUrl '/assets/images/wellness.jpg' | resize({ height: 300, width: 300 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-    <img src="{% getUrl '/assets/images/wellness.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Wellness products">
+    <img src="{% getUrl '/assets/images/wellness.jpg' | resize({ height: 300, width: 300 }) | webp%}" alt="Wellness products">
   </picture>
 
 
   <picture class="cs-picture">
     <source srcset="{% getUrl '/assets/images/hot-sauce.jpg' | resize({ height: 150, width: 150 }) | avif %}" media="(max-width: 600px)" type="image/avif">
     <source srcset="{% getUrl '/assets/images/hot-sauce.jpg' | resize({ height: 300, width: 300 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-    <img src="{% getUrl '/assets/images/hot-sauce.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="A mix of hot sauces">
+    <img src="{% getUrl '/assets/images/hot-sauce.jpg' | resize({ height: 300, width: 300 }) | webp%}" alt="A mix of hot sauces">
   </picture>
 
   <picture class="cs-picture">
     <source srcset="{% getUrl '/assets/images/green-produce.jpg' | resize({ height: 150, width: 150 }) | avif %}" media="(max-width: 600px)" type="image/avif">
     <source srcset="{% getUrl '/assets/images/green-produce.jpg' | resize({ height: 300, width: 300 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-    <img src="{% getUrl '/assets/images/green-produce.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Green fruit and vegetables">
+    <img src="{% getUrl '/assets/images/green-produce.jpg' | resize({ height: 300, width: 300 }) | webp%}" alt="Green fruit and vegetables">
   </picture>
 
   <picture class="cs-picture">
     <source srcset="{% getUrl '/assets/images/strawberries.jpg' | resize({ height: 150, width: 150 }) | avif %}" media="(max-width: 600px)" type="image/avif">
     <source srcset="{% getUrl '/assets/images/strawberries.jpg' | resize({ height: 300, width: 300 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-    <img src="{% getUrl '/assets/images/strawberries.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Strawberries">
+    <img src="{% getUrl '/assets/images/strawberries.jpg' | resize({ height: 300, width: 300 }) | webp%}" alt="Strawberries">
   </picture>
 
 </div>                          
@@ -199,7 +199,7 @@ eleventyNavigation:
           <picture class="cs-picture cs-picture-1">
             <source srcset="{% getUrl '/assets/images/slogan.png' | resize({ height: 508, width: 1110 }) | avif %}" media="(max-width: 600px)" type="image/avif">
             <source srcset="{% getUrl '/assets/images/slogan.png' | resize({ height: 508, width: 1110 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-            <img src="{% getUrl '/assets/images/slogan.png' | resize({ height: 676, width: 657 }) | jpeg %}" alt="Company slogan">
+            <img src="{% getUrl '/assets/images/slogan.png' | resize({ height: 676, width: 657 }) | webp%}" alt="Company slogan">
           </picture>
       </div>
       <!-- Right Content Section-->

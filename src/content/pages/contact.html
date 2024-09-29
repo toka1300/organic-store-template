@@ -26,7 +26,7 @@ eleventyNavigation:
       <picture class="cs-picture">
         <source srcset="{% getUrl '/assets/images/contact_banner.jpg' | resize({ height: 400, width: 750 }) | avif %}" media="(max-width: 600px)" type="image/avif">
         <source srcset="{% getUrl '/assets/images/contact_banner.jpg' | resize({ height: 1000, width: 2000 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-        <img src="{% getUrl '/assets/images/contact_banner.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="Hands offering fresh produce">
+        <img src="{% getUrl '/assets/images/contact_banner.jpg' | resize({ height: 300, width: 300 }) | webp %}" alt="Hands offering fresh produce">
       </picture>
   </section>
 
@@ -89,7 +89,7 @@ eleventyNavigation:
                 <picture class="cs-bg-picture">
                   <source srcset="{% getUrl '/assets/images/mailbox.jpg' | resize({ height: 544, width: 606 }) | avif %}" media="(max-width: 600px)" type="image/avif">
                   <source srcset="{% getUrl '/assets/images/mailbox.jpg' | resize({ height: 1200, width: 1024 }) | avif %}" media="(min-width: 601px)" type="image/avif">
-                  <img src="{% getUrl '/assets/images/mailbox.jpg' | resize({ height: 300, width: 300 }) | jpeg %}" alt="British style red mailbox">
+                  <img src="{% getUrl '/assets/images/mailbox.jpg' | resize({ height: 300, width: 300 }) | webp %}" alt="British style red mailbox">
                 </picture>
 
             </div>
