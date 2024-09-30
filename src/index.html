@@ -1,7 +1,7 @@
 ---
 title: 'Agricom | Organic Foods Store | Ottawa, ON'
 description: 'Meta description for the page'
-preloadImg: '/assets/images/hero-f86c414a054fc84b65b5743c1b8d2b84.avif'
+preloadImg: '/assets/images/hero-7c2bb31ed50835a8cd229430c87e7b26.avif'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -12,27 +12,17 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css"/>
-    <link rel="stylesheet" href="/assets/css/critical.css"/>
-    <!-- <link rel="preload" as="image" href="{% getUrl '/assets/images/hero.jpg' | resize({ width: 720, height: 774 }) | avif %}"/> -->
 
-    <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
-        }
-    </script>
+    <link rel="stylesheet" href="/assets/css/local.css"/>
+    <link rel="stylesheet" href="/assets/css/critical.css"
+    media="print" onload="this.media='all'; this.onload=null;">
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/local.css">
+    </noscript>
+
+    <!-- <link rel="stylesheet" href="/assets/css/local.css"/>
+    <link rel="stylesheet" href="/assets/css/critical.css"/> -->
+    <!-- <link rel="preload" as="image" href="{% getUrl '/assets/images/hero.jpg' | resize({ width: 720, height: 774 }) | avif %}"/> -->
 
     <!-- JSON Schema Markup -->
     <script type="application/ld+json">
@@ -89,14 +79,10 @@ eleventyNavigation:
             <a href="/contact/" class="cs-button-solid">Get in Touch</a>
             <span class="cs-header">Our Certifications:</span>
             <div class="cs-logo-group">
-                <!--Logo 1-->
-                <img class="cs-logo" src="./assets/images/partner1.svg" alt="Eco farm logo" width="113" height="31" decoding="async">
-                <!--Logo 2-->
-                <img class="cs-logo" src="./assets/images/partner2.svg" alt="Farmer house logo" width="113" height="40" decoding="async">
-                <!--Logo 3-->
-                <img class="cs-logo" src="./assets/images/partner3.svg" alt="Good farm logo" width="113" height="30" decoding="async">
-                <!--Logo 4-->
-                <img class="cs-logo" src="./assets/images/partner4.svg" alt="The Farm logo" width="113" height="37" decoding="async">
+                <img class="cs-logo" src="./assets/images/partner1.svg" alt="Eco farm logo" decoding="async">
+                <img class="cs-logo" src="./assets/images/partner2.svg" alt="Farmer house logo" decoding="async">
+                <img class="cs-logo" src="./assets/images/partner3.svg" alt="Good farm logo" decoding="async">
+                <img class="cs-logo" src="./assets/images/partner4.svg" alt="The Farm logo" decoding="async">
             </div>
         </div>
         <div class="cs-stat-group">
@@ -291,4 +277,22 @@ eleventyNavigation:
 </section>
                               
     {% include 'components/cta.html' %}
+
+        <!-- Script for Netlify Identity -->
+        <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        <script defer>
+            if (window.netlifyIdentity) {
+                window
+                    .netlifyIdentity
+                    .on('init', (user) => {
+                        if (!user) {
+                            window
+                                .netlifyIdentity
+                                .on('login', () => {
+                                    document.location.href = '/admin/';
+                                });
+                        }
+                    });
+            }
+        </script>
 {% endblock %}
