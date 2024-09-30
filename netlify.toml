@@ -2,9 +2,10 @@
   publish = "public/"
   command = "npm run build"
 
-  [build.processing.css]
-  bundle = true
-  minify = true
+  [build.processing]
+    skip_processing = false
+    css = { bundle = true, minify = true }
+    js = { bundle = true, minify = true }
 
 [[plugins]]
   # Installs the Lighthouse Build Plugin for all deploy contexts
