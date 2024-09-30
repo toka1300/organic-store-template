@@ -29,9 +29,6 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #sbs-1125 .cs-topper {
-    color: #767676;
-  }
   #sbs-1125 .cs-text {
     margin-bottom: 1rem;
   }
