@@ -2,7 +2,7 @@
   publish = "public/"
   command = "npm run build"
 
-  [build.processing]
+  [build.processing.css]
   bundle = true
   minify = true
 
@@ -15,6 +15,6 @@ package = "netlify-plugin-cache"
 
   [plugins.inputs]
   paths = [
-    "public/assets/images", # Processed images - adjust to match your outputDir
-    ".cache" # Remote Assets
+    "public/assets/images",
+    ".cache"
   ]
