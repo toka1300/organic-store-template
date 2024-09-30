@@ -30,13 +30,8 @@
         <!-- Preloads -->
         <link rel="preload" as="image" href="/assets/svgs/logo-black.svg">
         <link rel="preload" href="/assets/fonts/roboto-v32-latin-700.woff2 " as="font" type="font/woff2" crossorigin>
-        <!-- <link rel="preload" href="/assets/fonts/roboto-v32-latin-900.woff2 " as="font" type="font/woff2" crossorigin> -->
+        <!-- <link rel="preloa d" href="/assets/fonts/roboto-v32-latin-900.woff2 " as="font" type="font/woff2" crossorigin> -->
         <link rel="preload" href="/assets/fonts/roboto-v32-latin-regular.woff2 " as="font" type="font/woff2" crossorigin>
-
-        <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
-        {% if preloadImg != '' %}
-            <link rel="preload" as="image" href="{{ preloadImg }}"/>
-        {% endif %}
 
         <!-- Sitewide Stylesheets and Scripts -->
         <link rel="stylesheet" href="/assets/css/root.css">

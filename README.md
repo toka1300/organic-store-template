@@ -297,7 +297,6 @@ A copy of the default front matter can be found below:
 ---
 title: 'Page title for <title> and OG tags'
 description: 'Description for <meta> description and OG tags'
-preloadImg: '/assets/images/imagename.format'
 permalink: 'page-path/'
 eleventyNavigation:
     key: Name to appear in navigation

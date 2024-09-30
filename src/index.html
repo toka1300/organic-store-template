@@ -1,7 +1,6 @@
 ---
 title: 'Agricom | Organic Foods Store | Ottawa, ON'
 description: 'Meta description for the page'
-preloadImg: '/assets/images/hero-7c2bb31ed50835a8cd229430c87e7b26.avif'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -20,9 +19,7 @@ eleventyNavigation:
         <link rel="stylesheet" href="/assets/css/local.css">
     </noscript>
 
-    <!-- <link rel="stylesheet" href="/assets/css/local.css"/>
-    <link rel="stylesheet" href="/assets/css/critical.css"/> -->
-    <!-- <link rel="preload" as="image" href="{% getUrl '/assets/images/hero.jpg' | resize({ width: 720, height: 774 }) | avif %}"/> -->
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/hero.jpg' | resize({ width: 720, height: 774 }) | avif %}"/>
 
     <!-- JSON Schema Markup -->
     <script type="application/ld+json">
@@ -30,7 +27,6 @@ eleventyNavigation:
             "@context": "http://schema.org",
             "@type": "LocalBusiness",
             "name": "{{ client.name }}",
-            {% if preloadImg %}"image": "{{ preloadImg }}",{% endif %}
             {% if client.phoneFormatted %}"telephone": "{{ client.phoneFormatted }}",{% endif %}
             {% if client.email %}"email": "{{ client.email }}",{% endif %}
             {% if client.address %}
