@@ -160,7 +160,6 @@
         left: 0;
         opacity: 0;
     }
-    // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
 
     @font-face {
         font-display: swap;
@@ -238,8 +237,6 @@
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
         padding: calc(12 / 16 * 1rem) calc(16 / 16 * 1rem);
-        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: ")poppins", "Arial", sans-serif;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         .cs-container {
@@ -719,8 +716,6 @@
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
         padding: 0 calc(16 / 16 * 1rem);
-        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: "poppins", "Arial", sans-serif;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         .cs-container {
