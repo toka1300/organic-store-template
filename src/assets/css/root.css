@@ -204,8 +204,6 @@
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0.75rem 1rem;
-    /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: ")poppins", "Arial", sans-serif;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #cs-navigation .cs-container {
@@ -621,8 +619,6 @@
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0 1rem;
-    /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: "poppins", "Arial", sans-serif;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #cs-navigation .cs-container {
