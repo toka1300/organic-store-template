@@ -1,6 +1,6 @@
 module.exports = {
-    "name": "Organic Obsessed",
-    "email": "help@organic-obsessed.com",
+    "name": "Local Harvest",
+    "email": "help@local-harvest.com",
     "phoneForTel": "613-779-4407",
     "phoneFormatted": "(613) 779-4407",
     "address": {

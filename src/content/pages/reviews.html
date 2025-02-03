@@ -11,7 +11,7 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/reviews.css">
-    <link rel="preload" as="image" href="{ % getUrl '/assets/images/reviews_banner.jpg' | resize({ height: 400, width: 750 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/reviews_banner.jpg" | resize({ height: 400, width: 750 }) | avif %}"/>
 {% endblock %}
 
 {% block body %}
@@ -40,10 +40,10 @@ eleventyNavigation:
                     <img class="profile" decoding="async" src="/assets/images/profile-1.png" alt="profile" width="99" height="99">
                 </picture>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+                    The quality of produce I get from Local Harvest is incredible - my family can taste the difference in every meal, and I love knowing exactly which nearby farm grew our vegetables.
                 </p>
                 <div class="star-group">
-                    <span class="name">B Miller<span class="desc">Homeowner</span></span>
+                    <span class="name">Sarah M<span class="desc">Doctor</span></span>
                     <picture>
                         <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
                     </picture>
@@ -51,13 +51,13 @@ eleventyNavigation:
             </div>
             <div class="review">
                 <picture>
-                    <img class="profile" decoding="async" src="/assets/images/profile-1.png" alt="profile" width="99" height="99">
+                    <img class="profile" decoding="async" src="/assets/images/profile-2.png" alt="profile" width="99" height="99">
                 </picture>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+                    I switched to Local Harvest six months ago and haven't looked back - their weekly deliveries are always on time, the selection is fantastic, and it feels great supporting local farmers while getting the freshest possible ingredients.
                 </p>
                 <div class="star-group">
-                    <span class="name">Vincent M.<span class="desc">Homeowner</span></span>
+                    <span class="name">John Doe<span class="desc">Woodworker</span></span>
                     <picture>
                         <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
                     </picture>
@@ -65,10 +65,13 @@ eleventyNavigation:
             </div>
             <div class="review">
                 <picture>
-                    <img class="profile"decoding="async" src="/assets/images/profile-1.png" alt="profile" width="99" height="99">
+                   <source srcset="{% getUrl "/assets/images/profile-3.jpg" | resize({ width: 156, height: 156 }) | avif %}" type="image/avif">
+                   <source srcset="{% getUrl "/assets/images/profile-3.jpg" | resize({ width: 156, height: 156 }) | webp %}" type="image/webp">
+                   <source srcset="{% getUrl "/assets/images/profile-3.jpg" | resize({ width: 156, height: 156 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/profile-3.jpg" | resize({ width: 156, height: 156 }) | jpeg %}" alt="profile picture" width="156" height="156" loading="lazy" decoding="async" aria-hidden="true" class="profile" >
                 </picture>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+                    Local Harvest has completely changed the way I shop for groceries. Their fresh, seasonal produce is packed with flavor, and I appreciate supporting local farmers who use sustainable practices.
                 </p>
                 <div class="star-group">
                     <span class="name">Alex L.<span class="desc">Homeowner</span></span>
@@ -79,10 +82,13 @@ eleventyNavigation:
             </div>
             <div class="review">
                 <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile-1.png" alt="profile" width="99" height="99">
+                   <source srcset="{% getUrl "/assets/images/profile-4.jpg" | resize({ width: 156, height: 156 }) | avif %}" type="image/avif">
+                   <source srcset="{% getUrl "/assets/images/profile-4.jpg" | resize({ width: 156, height: 156 }) | webp %}" type="image/webp">
+                   <source srcset="{% getUrl "/assets/images/profile-4.jpg" | resize({ width: 156, height: 156 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/profile-4.jpg" | resize({ width: 156, height: 156 }) | jpeg %}" alt="profile picture" width="156" height="156" loading="lazy" decoding="async" aria-hidden="true" class="profile" >
                 </picture>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+                    The selection at Local Harvest is fantastic—everything from crisp greens to artisan breads. I trust that I’m getting the best quality ingredients for my family while reducing our environmental impact.
                 </p>
                 <div class="star-group">
                     <span class="name">Arrieana M.<span class="desc">Homeowner</span></span>
@@ -93,10 +99,13 @@ eleventyNavigation:
             </div>
             <div class="review">
                 <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile-1.png" alt="profile" width="99" height="99">
+                   <source srcset="{% getUrl "/assets/images/profile-5.jpg" | resize({ width: 156, height: 156 }) | avif %}" type="image/avif">
+                   <source srcset="{% getUrl "/assets/images/profile-5.jpg" | resize({ width: 156, height: 156 }) | webp %}" type="image/webp">
+                   <source srcset="{% getUrl "/assets/images/profile-5.jpg" | resize({ width: 156, height: 156 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/profile-5.jpg" | resize({ width: 156, height: 156 }) | jpeg %}" alt="profile picture" width="156" height="156" loading="lazy" decoding="async" aria-hidden="true" class="profile" >
                 </picture>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+                    I've never had produce this fresh outside of my own garden! Local Harvest offers vibrant, organic fruits and vegetables that taste amazing, plus their friendly staff always has great recipe tips.
                 </p>
                 <div class="star-group">
                     <span class="name">Leo N.<span class="desc">Homeowner</span></span>
@@ -107,10 +116,13 @@ eleventyNavigation:
             </div>
             <div class="review">
                 <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/images/profile-1.png" alt="profile" width="99" height="99">
+                   <source srcset="{% getUrl "/assets/images/profile-6.jpg" | resize({ width: 156, height: 156 }) | avif %}" type="image/avif">
+                   <source srcset="{% getUrl "/assets/images/profile-6.jpg" | resize({ width: 156, height: 156 }) | webp %}" type="image/webp">
+                   <source srcset="{% getUrl "/assets/images/profile-6.jpg" | resize({ width: 156, height: 156 }) | jpeg %}" type="image/jpeg">
+                   <img src="{% getUrl "/assets/images/profile-6.jpg" | resize({ width: 156, height: 156 }) | jpeg %}" alt="profile picture" width="156" height="156" loading="lazy" decoding="async" aria-hidden="true" class="profile" >
                 </picture>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
+                    Local Harvest makes eating healthy so easy. Their farm-to-table approach means I get the freshest ingredients, and I love knowing my purchases support small, ethical farms in my community.
                 </p>
                 <div class="star-group">
                     <span class="name">Brian A.<span class="desc">Homeowner</span></span>

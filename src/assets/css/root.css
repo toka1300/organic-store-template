@@ -942,7 +942,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
-    max-width: 19.1875rem;
+    max-width: 24rem;
     width: 96%;
   }
   #footer .right-section .lists ul {
@@ -1066,7 +1066,7 @@
   }
   #footer .right-section .lists {
     margin: 0;
-    max-width: 48.0625rem;
+    max-width: 28rem;
     width: 96%;
   }
   #footer .right-section .lists ul li a {
